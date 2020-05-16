@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_home"
+        android:title="@string/menu_item_home"
+        android:icon="@drawable/ic_home"/>
+
+    <item android:id="@+id/menu_item_restaurants"
+        android:title="@string/menu_item_restaurants"
+        android:icon="@drawable/ic_restaurant"/>
+
+    <item android:id="@+id/menu_item_museums"
+        android:title="@string/menu_item_museums"
+        android:icon="@drawable/ic_museum"/>
+
+    <item android:id="@+id/menu_item_parks"
+        android:title="@string/menu_item_parks"
+        android:icon="@drawable/ic_park"/>
+
+    <item android:id="@+id/menu_item_animal_attractions"
+        android:title="@string/menu_item_animal_attractions"
+        android:icon="@drawable/ic_animal"/>
+
+    <item android:id="@+id/menu_item_other_attractions"
+        android:title="@string/menu_item_other_attractions"
+        android:icon="@drawable/ic_other"/>
+
+</menu>

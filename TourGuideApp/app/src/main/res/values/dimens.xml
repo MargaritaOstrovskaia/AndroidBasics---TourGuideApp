@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rv_padding">10dp</dimen>
+    <dimen name="header_padding">20dp</dimen>
+
+    <dimen name="cv_margin">12dp</dimen>
+    <dimen name="cv_padding">5dp</dimen>
+    <dimen name="cv_elevation">5dp</dimen>
+    <dimen name="cv_corner_radius">5dp</dimen>
+    <dimen name="cv_text_size">14sp</dimen>
+    <dimen name="cv_image_height_size">50dp</dimen>
+    <dimen name="cv_image_width_size">100dp</dimen>
+
+    <dimen name="detail_title_size">22sp</dimen>
+    <dimen name="detail_text_size">16sp</dimen>
+    <dimen name="detail_address_size">14sp</dimen>
+    <dimen name="detail_padding">15dp</dimen>
+    <dimen name="detail_margin">10dp</dimen>
+
+    <dimen name="home_padding">20dp</dimen>
+    <dimen name="home_text_size">40sp</dimen>
+    <dimen name="scrollbar_size">6dp</dimen>
+</resources>

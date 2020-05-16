@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TourGuideApp</string>
+    <string name="drawer_image_description">San Diego icon</string>
+    <string name="content_description">attraction image</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="intent_key">ATTRACTION</string>
+
+    <string name="menu_item_home">Home map</string>
+    <string name="menu_item_home_name">San Diego Tour Guide</string>
+    <string name="menu_item_restaurants">Restaurants</string>
+    <string name="menu_item_museums">Museums</string>
+    <string name="menu_item_parks">Parks</string>
+    <string name="menu_item_animal_attractions">Animal attractions</string>
+    <string name="menu_item_other_attractions">Other attractions</string>
+
+    <string name="test_title">Balboa Park</string>
+    <string name="test_description">"Ever changing. Always amazing.  Where culture, science, and nature collide, Balboa Park is home to more than 16 museums, multiple performing arts venues, lovely gardens, trails, and many other creative and recreational attractions, including the San Diego Zoo. With a variety of cultural institutions among its 1,200 beautiful and lushly planted acres, there is something for everyone."</string>
+    <string name="test_price">0</string>
+    <string name="test_address">1549 El Prado, San Diego, CA 92101</string>
+    <string name="test_link">https://www.balboapark.org/</string>
+    <string name="web_site">Web site</string>
+    <string name="city_map">City map</string>
+    <string name="city_title">San Diego</string>
+</resources>
