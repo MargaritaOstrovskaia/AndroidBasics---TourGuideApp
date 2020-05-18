@@ -16,8 +16,8 @@ import java.util.ArrayList;
 public class OtherAttractionsFragment extends Fragment {
     private ArrayList<Attraction> attractions;
 
-    OtherAttractionsFragment(ArrayList<Attraction> attractions) {
-        this.attractions = attractions;
+    OtherAttractionsFragment() {
+        addAttractions();
     }
 
     @Override
@@ -40,5 +40,22 @@ public class OtherAttractionsFragment extends Fragment {
         rv.setAdapter(adapter);
 
         return view;
+    }
+
+    private void addAttractions() {
+        attractions = new ArrayList<>();
+
+        attractions.add(new Attraction("San Diego California Temple",
+                "The San Diego California Temple is the 47th constructed and 45th operating temple of The Church of Jesus Christ of Latter-day Saints. Located near the La Jolla community of San Diego, it was built with two main spires, but unique to this temple are four smaller spires at the base of each main spire.",
+                "7474 Charmant Dr, San Diego, CA 92122",
+                "https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple?lang=eng",
+                R.drawable.img_california_temple,
+                "https://goo.gl/maps/UgVUEnjY21HZCPCz8"));
+        attractions.add(new Attraction("La Jolla Cove",
+                "La Jolla Cove is a very small beach, tucked between sandstone cliffs. Because of its extraordinary beauty, La Jolla Cove is one of the most photographed beaches in Southern California.",
+                "1100 Coast Blvd, La Jolla, CA 92037",
+                "https://www.sandiego.gov/lifeguards/beaches/cove",
+                R.drawable.img_la_jolla_cove,
+                "https://goo.gl/maps/sWMSkVBMsMjRCVXs6"));
     }
 }

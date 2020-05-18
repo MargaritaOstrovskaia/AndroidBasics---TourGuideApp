@@ -16,8 +16,8 @@ import java.util.ArrayList;
 public class AnimalAttractionsFragment extends Fragment {
     private ArrayList<Attraction> attractions;
 
-    AnimalAttractionsFragment(ArrayList<Attraction> attractions) {
-        this.attractions = attractions;
+    AnimalAttractionsFragment() {
+        addAttractions();
     }
 
     @Override
@@ -40,5 +40,34 @@ public class AnimalAttractionsFragment extends Fragment {
         rv.setAdapter(adapter);
 
         return view;
+    }
+
+    private void addAttractions() {
+        attractions = new ArrayList<>();
+
+        attractions.add(new Attraction("SeaWorld San Diego",
+                "Marine life shows, thrill rides, aquariums & up-close encounters with dolphins, penguins & more.",
+                "500 Sea World Dr, San Diego, CA 92109",
+                "https://seaworld.com/san-diego",
+                R.drawable.img_seaworld,
+                "https://g.page/SeaWorldSanDiegoCA"));
+        attractions.add(new Attraction("San Diego Zoo",
+                "Zoo features giraffes, koalas, apes & more, plus a safari park for tours & a conservation society.",
+                "2920 Zoo Dr, San Diego, CA 92101",
+                "https://zoo.sandiegozoo.org/",
+                R.drawable.img_san_diego_zoo,
+                "https://goo.gl/maps/tuqdtjJBNPaBEHRg8"));
+        attractions.add(new Attraction("San Diego Zoo Safari Park",
+                "Visitor tours of a 1,800-acre wildlife sanctuary with over 300 species of African & Asian animals.",
+                "15500 San Pasqual Valley Rd, Escondido, CA 92027",
+                "https://www.sdzsafaripark.org/",
+                R.drawable.img_safari_park,
+                "https://goo.gl/maps/FZZXtTHyZdGBGnfKA"));
+        attractions.add(new Attraction("Birch Aquarium at Scripps",
+                "Interactive tide pools & exhibitions for all things under the sea in an oceanside building.",
+                "2300 Expedition Way, La Jolla, CA 92037",
+                "https://aquarium.ucsd.edu/",
+                R.drawable.img_birch_aquarium,
+                "https://goo.gl/maps/BpxRVGeARgjUpbTB6"));
     }
 }

@@ -11,8 +11,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.Locale;
-
 public class DetailActivity extends AppCompatActivity {
 
     @Override
@@ -31,6 +29,7 @@ public class DetailActivity extends AppCompatActivity {
 
             TextView title = findViewById(R.id.detail_title);
             title.setText(attraction.getTitle());
+            setTitle(attraction.getTitle());
 
             TextView description = findViewById(R.id.detail_description);
             description.setText(attraction.getDescription());
@@ -40,7 +39,6 @@ public class DetailActivity extends AppCompatActivity {
             address.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //String uri = String.format();
                     Intent next = new Intent(Intent.ACTION_VIEW, Uri.parse(attraction.getUri()));
                     startActivity(next);
                 }
