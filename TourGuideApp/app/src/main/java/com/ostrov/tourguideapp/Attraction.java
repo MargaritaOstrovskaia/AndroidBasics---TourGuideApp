@@ -1,78 +1,95 @@
 package com.ostrov.tourguideapp;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 import java.io.Serializable;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+        "title",
+        "description",
+        "address",
+        "link",
+        "uri",
+        "image"
+})
 class Attraction implements Serializable {
+    @JsonProperty("title")
     private String title;
+    @JsonProperty("description")
     private String description;
+    @JsonProperty("address")
     private String address;
+    @JsonProperty("link")
     private String link;
+    @JsonProperty("uri")
     private String uri;
-    private int imageId;
+    @JsonProperty("image")
+    private String image;
 
-    /**
-     * Constructor
-     * @param title place name
-     * @param description place description
-     * @param address place address
-     * @param link internet url
-     * @param imageId image resource id
-     * @param uri string uri
-     */
-    Attraction(String title, String description, String address, String link, int imageId, String uri) {
-        this.title = title;
-        this.description = description;
-        this.address = address;
-        this.link = link;
-        this.imageId = imageId;
-        this.uri = uri;
+    /** Constructor */
+    Attraction() {
     }
 
-    /**
-     * Get place name
-     * @return place name
-     */
+    @JsonProperty("title")
     String getTitle() {
         return title;
     }
 
-    /**
-     * Get place description
-     * @return place description
-     */
+    @JsonProperty("title")
+    void setTitle(String title) {
+        this.title = title;
+    }
+
+    @JsonProperty("description")
     String getDescription() {
         return description;
     }
 
-    /**
-     * Get place address
-     * @return place address
-     */
+    @JsonProperty("description")
+    void setDescription(String description) {
+        this.description = description;
+    }
+
+    @JsonProperty("address")
     String getAddress() {
         return address;
     }
 
-    /**
-     * Get internet url
-     * @return internet url
-     */
+    @JsonProperty("address")
+    void setAddress(String address) {
+        this.address = address;
+    }
+
+    @JsonProperty("link")
     String getLink() {
         return link;
     }
 
-    /**
-     * Get image resource id
-     * @return image resource id
-     */
-    int getImageId() {
-        return imageId;
+    @JsonProperty("link")
+    void setLink(String link) {
+        this.link = link;
     }
 
-    /**
-     * Get string uri
-     * @return string uri
-     */
+    @JsonProperty("uri")
     String getUri() {
         return uri;
+    }
+
+    @JsonProperty("uri")
+    void setUri(String uri) {
+        this.uri = uri;
+    }
+
+    @JsonProperty("image")
+    String getImage() {
+        return image;
+    }
+
+    @JsonProperty("image")
+    void setImage(String image) {
+        this.image = image;
     }
 }

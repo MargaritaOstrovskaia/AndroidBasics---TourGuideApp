@@ -24,8 +24,11 @@ public class DetailActivity extends AppCompatActivity {
         if (intent.hasExtra(getString(R.string.intent_key))) {
             final Attraction attraction = (Attraction) intent.getSerializableExtra(getString(R.string.intent_key));
 
-            ImageView image = findViewById(R.id.detail_image);
-            image.setImageResource(attraction.getImageId());
+            ImageView imageView = findViewById(R.id.detail_image);
+            int id = getResources().getIdentifier(attraction.getImage(),
+                    getString(R.string.def_type),
+                    getPackageName());
+            imageView.setImageResource(id);
 
             TextView title = findViewById(R.id.detail_title);
             title.setText(attraction.getTitle());

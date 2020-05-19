@@ -1,0 +1,39 @@
+{
+	"title": "Museums",
+	"attractions": [{
+		"title": "USS Midway Museum",
+		"description": "Life-at-sea exhibits, restored planes & flight simulators aboard this legendary aircraft carrier.",
+		"address": "910 N Harbor Dr, San Diego, CA 92101",
+		"link": "https://www.midway.org/",
+		"uri": "https://g.page/uss-midway-museum-san-diego",
+		"image": "img_midway_museum"
+	},{
+		"title": "Maritime Museum of San Diego",
+		"description": "Waterfront venue showcasing many types of restored vintage ships & historical exhibits.",
+		"address": "1492 N Harbor Dr, San Diego, CA 92101",
+		"link": "https://sdmaritime.org/",
+		"uri": "https://g.page/sdmaritime",
+		"image": "img_star_of_india"
+	},{
+		"title": "San Diego Air & Space Museum",
+		"description": "Popular place with historical aircraft/spacecraft & interactive exhibits, plus a gift shop & grill.",
+		"address": "2001 Pan American Plaza, San Diego, CA 92101",
+		"link": "https://sandiegoairandspace.org/",
+		"uri": "https://goo.gl/maps/9Lvuir3jfjug6oKS9",
+		"image": "img_air_space_museum"
+	},{
+		"title": "San Diego Model Railroad Museum",
+		"description": "Kid-friendly museum featuring many working scale models of California rail lines & landscapes.",
+		"address": "1649 El Prado Modern and Contemporary Art and Dynamic, San Diego, CA 92101",
+		"link": "https://www.sdmrm.org/",
+		"uri": "https://g.page/SDMRM",
+		"image": "img_model_railroad_museum"
+	},{
+		"title": "California Tower in Museum of Man",
+		"description": "Historical landmark",
+		"address": "California Tower, 1350 El Prado, San Diego, CA 92101",
+		"link": "https://www.museumofman.org/california-building/",
+		"uri": "https://goo.gl/maps/i4Saoi2bxoevK9qw7",
+		"image": "img_california_tower"
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	"title": "Parks",
+	"attractions": [{
+		"title": "Belmont Park",
+		"description": "Vintage games, gift shops, rides & an iconic wooden roller coaster right next to the beach.",
+		"address": "3146 Mission Blvd, San Diego, CA 92109",
+		"link": "https://www.belmontpark.com/",
+		"uri": "https://g.page/belmontparksd",
+		"image": "img_belmont_park"
+	},{
+		"title": "Balboa Park",
+		"description": "Ever changing. Always amazing.  Where culture, science, and nature collide, Balboa Park is home to more than 16 museums, multiple performing arts venues, lovely gardens, trails, and many other creative and recreational attractions, including the San Diego Zoo. With a variety of cultural institutions among its 1,200 beautiful and lushly planted acres, there is something for everyone.",
+		"address": "1549 El Prado, San Diego, CA 92101",
+		"link": "https://www.balboapark.org/",
+		"uri": "https://goo.gl/maps/KY3j4cgChoVV9PGY6",
+		"image": "img_balboa_park"
+	}]
+}

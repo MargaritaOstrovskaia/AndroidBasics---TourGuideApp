@@ -1,11 +1,21 @@
 <resources>
     <string name="app_name">TourGuideApp</string>
+    <string name="standard_charsets">UTF-8</string>
     <string name="drawer_image_description">San Diego icon</string>
     <string name="content_description">attraction image</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
-
     <string name="intent_key">ATTRACTION</string>
+    <string name="web_site">Web site</string>
+    <string name="city_map">City map</string>
+    <string name="city_title">San Diego</string>
+    <string name="def_type">drawable</string>
+
+    <string name="file_museums">museums.json</string>
+    <string name="file_restaurants">restaurants.json</string>
+    <string name="file_animals">animals.json</string>
+    <string name="file_parks">parks.json</string>
+    <string name="file_other">other.json</string>
 
     <string name="menu_item_home">Home map</string>
     <string name="menu_item_home_name">San Diego Tour Guide</string>
@@ -20,7 +30,4 @@
     <string name="test_price">0</string>
     <string name="test_address">1549 El Prado, San Diego, CA 92101</string>
     <string name="test_link">https://www.balboapark.org/</string>
-    <string name="web_site">Web site</string>
-    <string name="city_map">City map</string>
-    <string name="city_title">San Diego</string>
 </resources>

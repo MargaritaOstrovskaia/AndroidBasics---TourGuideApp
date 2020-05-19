@@ -1,5 +1,6 @@
 package com.ostrov.tourguideapp;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,8 +18,10 @@ class AttractionAdapter extends RecyclerView.Adapter<AttractionAdapter.Attractio
     }
     private final OnItemClickListener listener;
     private ArrayList<Attraction> attractions;
+    private Context context;
 
-    AttractionAdapter(ArrayList<Attraction> attractions, OnItemClickListener listener) {
+    AttractionAdapter(Context context, ArrayList<Attraction> attractions, OnItemClickListener listener) {
+        this.context = context;
         this.attractions = attractions;
         this.listener = listener;
     }
@@ -39,7 +42,10 @@ class AttractionAdapter extends RecyclerView.Adapter<AttractionAdapter.Attractio
     public void onBindViewHolder(@NonNull AttractionViewHolder holder, int position) {
         final Attraction attraction = attractions.get(position);
         holder.tv.setText(attraction.getTitle());
-        holder.img.setImageResource(attraction.getImageId());
+        int id = context.getResources().getIdentifier(attraction.getImage(),
+                context.getString(R.string.def_type),
+                context.getPackageName());
+        holder.img.setImageResource(id);
 
         holder.tv.setOnClickListener(new View.OnClickListener() {
             @Override

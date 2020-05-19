@@ -13,6 +13,9 @@ import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 public class MainActivity extends AppCompatActivity {
     private MenuItem currentItem;
     private DrawerLayout mDrawerLayout;
@@ -41,36 +44,57 @@ public class MainActivity extends AppCompatActivity {
         changeFragment(currentItem);
     }
 
+    /** Load data from json file */
+    public String loadJSONFromAsset(int file) {
+        String json = null;
+        try {
+            String FILE = getString(file);
+            InputStream is = this.getAssets().open(FILE);
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, getString(R.string.standard_charsets));
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
+    }
+
     private void changeFragment(MenuItem menuItem) {
         currentItem.setChecked(false);
         currentItem = menuItem;
         menuItem.setChecked(true);
 
         Fragment fragment;
+        String json;
         switch (menuItem.getItemId()) {
             case R.id.menu_item_restaurants:
-                fragment = new RestaurantsFragment();
+                json = loadJSONFromAsset(R.string.file_restaurants);
+                fragment = new RestaurantsFragment(json);
                 break;
             case R.id.menu_item_museums:
-                fragment = new MuseumsFragment();
+                json = loadJSONFromAsset(R.string.file_museums);
+                fragment = new MuseumsFragment(json);
                 break;
             case R.id.menu_item_parks:
-                fragment = new ParksFragment();
+                json = loadJSONFromAsset(R.string.file_parks);
+                fragment = new ParksFragment(json);
                 break;
             case R.id.menu_item_animal_attractions:
-                fragment = new AnimalAttractionsFragment();
+                json = loadJSONFromAsset(R.string.file_animals);
+                fragment = new AnimalAttractionsFragment(json);
                 break;
             case R.id.menu_item_other_attractions:
-                fragment = new OtherAttractionsFragment();
+                json = loadJSONFromAsset(R.string.file_other);
+                fragment = new OtherAttractionsFragment(json);
                 break;
             default:
+
                 fragment = new HomeFragment();
                 break;
         }
-        if (menuItem.getItemId() == R.id.menu_home)
-            setTitle(getString(R.string.menu_item_home_name));
-        else
-            setTitle(menuItem.getTitle());
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager

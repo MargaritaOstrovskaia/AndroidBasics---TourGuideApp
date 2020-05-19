@@ -1,0 +1,32 @@
+{
+	"title": "Animal attractions",
+	"attractions": [{
+		"title": "SeaWorld San Diego",
+		"description": "Marine life shows, thrill rides, aquariums & up-close encounters with dolphins, penguins & more.",
+		"address": "500 Sea World Dr, San Diego, CA 92109",
+		"link": "https://seaworld.com/san-diego",
+		"uri": "https://g.page/SeaWorldSanDiegoCA",
+		"image": "img_seaworld"
+	},{
+		"title": "San Diego Zoo",
+		"description": "Zoo features giraffes, koalas, apes & more, plus a safari park for tours & a conservation society.",
+		"address": "2920 Zoo Dr, San Diego, CA 92101",
+		"link": "https://zoo.sandiegozoo.org/",
+		"uri": "https://goo.gl/maps/tuqdtjJBNPaBEHRg8",
+		"image": "img_san_diego_zoo"
+	},{
+		"title": "San Diego Zoo Safari Park",
+		"description": "Visitor tours of a 1,800-acre wildlife sanctuary with over 300 species of African & Asian animals.",
+		"address": "15500 San Pasqual Valley Rd, Escondido, CA 92027",
+		"link": "https://www.sdzsafaripark.org/",
+		"uri": "https://goo.gl/maps/FZZXtTHyZdGBGnfKA",
+		"image": "img_safari_park"
+	},{
+		"title": "Birch Aquarium at Scripps",
+		"description": "Interactive tide pools & exhibitions for all things under the sea in an oceanside building.",
+		"address": "2300 Expedition Way, La Jolla, CA 92037",
+		"link": "https://aquarium.ucsd.edu/",
+		"uri": "https://goo.gl/maps/BpxRVGeARgjUpbTB6",
+		"image": "img_birch_aquarium"
+	}]
+}
